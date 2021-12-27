@@ -449,7 +449,7 @@ static GLFWbool initializeTIS(void)
 
     // In case we are unbundled, make us a proper UI application
     if (_glfw.hints.init.ns.menubar)
-        [NSApp setActivationPolicy:NSApplicationActivationPolicyRegular];
+        [NSApp setActivationPolicy:NSApplicationActivationPolicyAccessory];
 
     [NSApp stop:nil];
 }
